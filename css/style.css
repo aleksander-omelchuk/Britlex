@@ -2,16 +2,21 @@
   --main-background-color: #ffffff;
   --second-background-color: #f5f5f5;
   --button-background-color: #263238;
+  --price-background-color: #eeeeee;
   --main-text-color: #8f95a5;
   --title-color: #000000;
   --title-text-color: #263238;
   --text-logo-color: #939393;
+  --price-color: #546269;
+
   --main-font: "Poppins", sans-serif;
+  --number-color: #2a3246;
 }
 body {
   background-color: var(--main-background-color);
   color: var(--main-text-color);
   font-family: var(--main-font);
+  font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.03em;
 }
@@ -77,7 +82,32 @@ body {
   font-weight: 500;
   font-size: 18px;
   color: var(--main-background-color);
-  background: var(--button-background-color);
+  background-color: var(--button-background-color);
   border-radius: 10px;
 }
 /* Section About Us */
+.desc {
+  font-size: 20px;
+  line-height: 1.8;
+}
+.number {
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--number-color);
+}
+.title-pricing {
+  font-size: 30px;
+  line-height: 1.6;
+  text-transform: capitalize;
+  color: var(--title-text-color);
+}
+.price {
+  font-size: 24px;
+  color: var(--title-text-color);
+  background-color: var(--price-background-color);
+  border-radius: 5px;
+}
+.span-price {
+  font-size: 18px;
+  color: var(--price-color);
+}
