@@ -111,3 +111,9 @@ body {
   font-size: 18px;
   color: var(--price-color);
 }
+/* section Contact Us */
+.input {
+  border: 1px solid var(--main-text-color);
+  border-radius: 10px;
+}
+/* footer */
