@@ -4,32 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Britlex</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- header -->
     <header>
-      <a href="" aria-label="britlex"><span>brit</span>lex</a>
-      <nav>
+      <a class="logo" href="" aria-label="britlex"><span>Brit</span>lex</a>
+      <nav class="nav">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Contacts</a></li>
+          <li class="link"><a class="link-nav" href="">Home</a></li>
+          <li class="link"><a class="link-nav" href="">Skills</a></li>
+          <li class="link"><a class="link-nav" href="">About Us</a></li>
+          <li class="link"><a class="link-nav" href="">Pricing</a></li>
+          <li class="link"><a class="link-nav" href="">Contacts</a></li>
         </ul>
       </nav>
-      <button type="button">Let’s Talk</button>
+      <button class="btn" type="button">Let’s Talk</button>
     </header>
     <main>
       <!-- section Hero -->
       <section>
-        <h1>Learn Any Foreign Language</h1>
-        <p>
+        <h1 class="title">Learn Any Foreign Language</h1>
+        <p class="title-text">
           With our teachers who write a program for each student, you will be
           able to make your first sketch after the first lesson.
         </p>
-        <button type="button">Get started</button
+        <button class="btn-hero" type="button">Get started</button
         ><img
           src="./images/learninglanguages.jpg"
           alt="teachers"
@@ -39,16 +46,16 @@
       </section>
       <!-- section Skills -->
       <section>
-        <h2>Skills</h2>
+        <h2 class="subtitle">Skills</h2>
         <ul>
-          <li>
+          <li class="link">
             <img
               src="./images/goal.jpg"
               alt="Speaking"
               width="390"
               height="390"
             />
-            <h3>Speaking</h3>
+            <h3 class="title-subtitle">Speaking</h3>
             <p>
               Improve your English skills and confidence. Live classes and
               interactive lessons online. 20% extra free for a limited time only
@@ -58,55 +65,55 @@
               high-quality courses and resources – all designed for adult
               language learners.
             </p>
-            <button type="button">Learn more</button>
+            <button class="button" type="button">Learn more</button>
           </li>
-          <li>
+          <li class="link">
             <img
               src="./images/typewriter.jpg"
               alt="Writing"
               width="390"
               height="264"
             />
-            <h3>Writing</h3>
+            <h3 class="title-subtitle">Writing</h3>
             <p>
               One of the most important and extensive areas of natural science,
               the science that studies substances, also their composition
             </p>
-            <button type="button">Learn more</button>
+            <button class="button" type="button">Learn more</button>
           </li>
-          <li>
+          <li class="link">
             <img
               src="./images/house.jpg"
               alt="Reading"
               width="390"
               height="264"
             />
-            <h3>Reading</h3>
+            <h3 class="title-subtitle">Reading</h3>
             <p>
               Perception and response actions of the user resulting from the use
               and/or upcoming use of the product, system or service
             </p>
-            <button type="button">Learn more</button>
+            <button class="button" type="button">Learn more</button>
           </li>
-          <li>
+          <li class="link">
             <img
               src="./images/podcast.jpg"
               alt="Listening"
               width="408"
               height="274"
             />
-            <h3>Listening</h3>
+            <h3 class="title-subtitle">Listening</h3>
             <p>
               Here you can find activities to practise your listening skills.
               Listening will help you to improve your understanding
             </p>
-            <button type="button">Learn more</button>
+            <button class="button" type="button">Learn more</button>
           </li>
         </ul>
       </section>
       <!-- Section About Us -->
       <section>
-        <h2>About Us</h2>
+        <h2 class="subtitle">About Us</h2>
         <p>
           The model offers a framework for discussing problems related to the
           user's experience, as well as possible ways and means of solving them.
@@ -126,18 +133,18 @@
           <li>
             <p>6</p>
             <p>Foreign languages</p>
+            <img
+              src="./images/businesscompetition.jpg"
+              alt="businesscompetition"
+              width="540"
+              height="540"
+            />
           </li>
-          <img
-            src="./images/businesscompetition.jpg"
-            alt="businesscompetition"
-            width="540"
-            height="540"
-          />
         </ul>
       </section>
       <!-- section Pricing -->
       <section>
-        <h2>Pricing</h2>
+        <h2 class="subtitle">Pricing</h2>
         <ul>
           <li>
             <img
@@ -185,13 +192,13 @@
     </main>
     <!-- section Contact Us -->
     <section>
-      <h2>Contact Us</h2>
+      <h2 class="subtitle">Contact Us</h2>
       <img src="./images/contact.jpg" alt="boy" width="425" height="430" />
       <p>
         Discover your current English level by taking our free online English
         test. Sign up to our newsletter for learning tips and free resources
       </p>
-      <form action="">
+      <form action="aleksander.omelchuk@gmail.com">
         <input type="text" />
         <button type="button">Subscribe</button>
       </form>

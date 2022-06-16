@@ -1,0 +1,82 @@
+:root {
+  --main-background-color: #ffffff;
+  --second-background-color: #f5f5f5;
+  --button-background-color: #263238;
+  --main-text-color: #8f95a5;
+  --title-color: #000000;
+  --title-text-color: #263238;
+  --text-logo-color: #939393;
+  --main-font: "Poppins", sans-serif;
+}
+body {
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+}
+/* header */
+.link {
+  list-style: none;
+}
+.link-nav,
+.logo {
+  text-decoration: none;
+}
+
+.link-nav {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--title-text-color);
+}
+.logo {
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  color: var(--text-logo-color);
+}
+.logo > span {
+  color: var(--title-color);
+}
+.btn {
+  font-family: var(--main-font);
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  background-color: var(--main-background-color);
+  border-radius: 10px;
+}
+/* section hero */
+.title {
+  font-size: 64px;
+  line-height: 1.25;
+  color: var(--title-color);
+}
+.title-text {
+  font-size: 24px;
+}
+.btn-hero {
+  font-family: var(--main-font);
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  background-color: var(--button-background-color);
+  color: var(--main-background-color);
+  border-radius: 10px;
+}
+/* section Skills */
+.subtitle {
+  font-size: 48px;
+  color: var(--title-color);
+}
+.title-subtitle {
+  font-size: 30px;
+  color: var(--title-text-color);
+}
+.button {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--main-background-color);
+  background: var(--button-background-color);
+  border-radius: 10px;
+}
