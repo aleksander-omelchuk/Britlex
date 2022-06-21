@@ -11,6 +11,24 @@
   --main-font: "Poppins", sans-serif;
   --number-color: #2a3246;
 }
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 body {
   background-color: var(--main-background-color);
   color: var(--main-text-color);
