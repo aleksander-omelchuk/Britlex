@@ -19,6 +19,16 @@ p {
   margin: 0;
   padding: 0;
 }
+.container {
+  width: 1388px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding-bottom: 180px;
+}
 img {
   display: block;
   max-width: 100%;
@@ -38,6 +48,16 @@ body {
   letter-spacing: 0.03em;
 }
 /* header */
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+.list {
+  display: flex;
+}
+
 .link {
   list-style: none;
 }
@@ -50,6 +70,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   color: var(--title-text-color);
+  margin-right: 50px;
 }
 .logo {
   font-size: 36px;
