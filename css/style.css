@@ -32,6 +32,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 ul {
   margin: 0;
@@ -136,12 +137,48 @@ body {
 /* section Skills */
 .subtitle {
   font-size: 48px;
+  text-align: center;
+  margin-bottom: 60px;
   color: var(--title-color);
+}
+.cards {
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: inline-flex;
+  width: 426px;
+  height: 947px;
+}
+.cards .link {
+  background-color: #e5e5e5;
+}
+.link-speaking {
+  margin-right: 30px;
+}
+.link-writing {
+  width: 426px;
+  height: 579px;
+  margin-right: 30px;
+}
+.link-reading {
+  width: 426px;
+  height: 579px;
+  margin-right: auto;
+}
+.link-listening {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 882px;
+  height: 338px;
 }
 .title-subtitle {
   font-size: 30px;
+  margin-bottom: 20px;
   color: var(--title-text-color);
 }
+.text-speaking {
+  margin-bottom: 30px;
+}
+
 .button {
   font-family: var(--main-font);
   font-weight: 500;
