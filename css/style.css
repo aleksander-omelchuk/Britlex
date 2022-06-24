@@ -142,40 +142,18 @@ body {
   color: var(--title-color);
 }
 .cards {
-  flex-direction: column;
-  flex-wrap: wrap;
-  display: inline-flex;
-  width: 426px;
-  height: 947px;
-}
-.link-speaking {
-  margin-right: 30px;
-}
-.link-writing {
-  width: 426px;
-  height: 579px;
-  margin-right: 30px;
-}
-.link-reading {
-  width: 426px;
-  height: 579px;
-  margin-right: auto;
-}
-.link-listening {
   display: flex;
-  flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
-.img-listening {
+.cards-speaking {
+  grid-area: auto;
 }
+
 .title-subtitle {
   font-size: 30px;
   margin-bottom: 20px;
   color: var(--title-text-color);
 }
-.text-speaking {
-  margin-bottom: 30px;
-}
-
 .button {
   font-family: var(--main-font);
   font-weight: 500;
@@ -184,6 +162,7 @@ body {
   background-color: var(--button-background-color);
   border-radius: 10px;
 }
+*/
 /* Section About Us */
 .desc {
   font-size: 20px;
