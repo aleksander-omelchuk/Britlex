@@ -148,9 +148,6 @@ body {
   width: 426px;
   height: 947px;
 }
-.cards .link {
-  background-color: #e5e5e5;
-}
 .link-speaking {
   margin-right: 30px;
 }
@@ -167,8 +164,8 @@ body {
 .link-listening {
   display: flex;
   flex-direction: row-reverse;
-  width: 882px;
-  height: 338px;
+}
+.img-listening {
 }
 .title-subtitle {
   font-size: 30px;
