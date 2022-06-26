@@ -235,14 +235,42 @@ body {
 }
 
 /* Section About Us */
+.subtitle-about {
+  text-align: left;
+}
+.container-about {
+  display: flex;
+}
+.text-about {
+  display: flex;
+  flex-wrap: wrap;
+}
 .desc {
   font-size: 20px;
   line-height: 1.8;
+  margin-right: 146px;
+  margin-bottom: 30px;
+}
+.link-number {
+  display: flex;
+  text-align: center;
+  width: 555px;
+  height: 138px;
+  margin-left: 50px;
+  gap: 131px;
 }
 .number {
   font-weight: 600;
   font-size: 48px;
   color: var(--number-color);
+}
+/* --Pricing-- */
+.pricing {
+  display: flex;
+  gap: 30px;
+}
+.link-pricing {
+  display: inline-block;
 }
 .title-pricing {
   font-size: 30px;
