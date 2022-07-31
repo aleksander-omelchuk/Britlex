@@ -20,7 +20,7 @@ p {
   padding: 0;
 }
 .container {
-  width: 1388px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -29,6 +29,10 @@ p {
 .section {
   padding-bottom: 180px;
 }
+.discription {
+  margin-: auto;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -45,7 +49,7 @@ body {
   font-family: var(--main-font);
   font-size: 20px;
   line-height: 1.5;
-  letter-spacing: 0.03em;
+  letter-spacing: normal;
 }
 /* header */
 .header {
@@ -102,12 +106,16 @@ body {
   margin-left: auto;
 }
 /* section hero */
-.text-block {
+.hero {
   display: flex;
 }
-.discription {
+.text-block {
+  max-width: 540px;
   margin-right: auto;
+ 
+  
 }
+
 .title {
   font-size: 64px;
   line-height: 1.25;
@@ -131,7 +139,7 @@ body {
   letter-spacing: 0.03em;
   background-color: var(--button-background-color);
   color: var(--main-background-color);
-  padding: 23px 64px;
+  padding: 0;
   border-radius: 10px;
 }
 /* section Skills */
@@ -235,7 +243,7 @@ body {
 }
 
 /* Section About Us */
-.subtitle-about {
+.subtitle-left {
   text-align: left;
 }
 .container-about {
@@ -268,7 +276,7 @@ body {
 /* --Pricing-- */
 .pricing {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
 }
 .link-pricing {
   display: inline-block;
@@ -283,7 +291,11 @@ body {
   color: var(--title-text-color);
 }
 .price {
-  display: inline-block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 260px;
+  min-height: 45px;
   font-size: 24px;
   color: var(--title-text-color);
   background-color: var(--price-background-color);
@@ -291,16 +303,44 @@ body {
 }
 
 .pricing-text {
-  margin-bottom: auto;
+ margin-bottom: 30px;
 }
+.pricing-text:not(:first-child) {
+  margin-bottom: 60px;
+ }
 .span-price {
   font-size: 18px;
   color: var(--price-color);
 }
 /* section Contact Us */
+.contact-us-text {
+  max-width: 654px;
+
+margin-bottom: 30px;
+}
+.form-input {
+  display: flex;
+}
 .input {
+  
+  min-width: 425px;
   border: 1px solid var(--main-text-color);
   border-radius: 10px;
+}
+.button-subscribe {
+  border: none;
+  padding: 0;
+  margin-left: 30px;
+  width: 312px;
+height: 70px;
+
+font-weight: 500;
+
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+background: #263238;
+border-radius: 10px;
 }
 /* footer */
 .link-footer {
