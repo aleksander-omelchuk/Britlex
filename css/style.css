@@ -106,7 +106,7 @@ body {
   display: flex;
 }
 .discription {
-  margin-right: 144px;
+  margin-right: auto;
 }
 .title {
   font-size: 64px;
@@ -246,6 +246,7 @@ body {
   flex-wrap: wrap;
 }
 .desc {
+  
   font-size: 20px;
   line-height: 1.8;
   margin-right: 146px;
@@ -271,18 +272,26 @@ body {
 }
 .link-pricing {
   display: inline-block;
+  max-width: 426px;
 }
 .title-pricing {
   font-size: 30px;
   line-height: 1.6;
   text-transform: capitalize;
+  margin-top: 31px;
+  margin-bottom: 20px;
   color: var(--title-text-color);
 }
 .price {
+  display: inline-block;
   font-size: 24px;
   color: var(--title-text-color);
   background-color: var(--price-background-color);
   border-radius: 5px;
+}
+
+.pricing-text {
+  margin-bottom: auto;
 }
 .span-price {
   font-size: 18px;
