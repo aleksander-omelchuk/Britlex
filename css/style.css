@@ -108,16 +108,21 @@ body {
 .text-block {
   max-width: 540px;
   margin-right: auto;
+  position: relative;
 }
-
+.text-block__icon {
+  position: absolute;
+  top: 90px;
+  left: 420px;
+  fill: #000;
+}
 .title {
   font-size: 64px;
   line-height: 1.25;
+  margin-bottom: 40px;
   color: var(--title-color);
 }
-.title-discription {
-  margin-bottom: 40px;
-}
+
 .title-text-discription {
   margin-bottom: 60px;
 }
