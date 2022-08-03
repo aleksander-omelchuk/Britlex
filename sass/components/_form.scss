@@ -1,0 +1,12 @@
+.form {
+    display: flex;
+}
+
+.form__input {
+    font-size: 16px;
+    line-height: 1.87;
+    width: 425px;
+    padding: 20px 30px;
+    border: 1px solid var(--main-text-color);
+    border-radius: 10px;
+}

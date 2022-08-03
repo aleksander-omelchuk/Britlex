@@ -1,0 +1,21 @@
+.container {
+  max-width: 1378px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container__about {
+  display: flex;
+}
+
+.container__contact-us {
+  display: flex;
+}
+
+.container__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
