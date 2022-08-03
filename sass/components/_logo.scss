@@ -4,8 +4,9 @@
     letter-spacing: 0.03em;
     color: var(--text-logo-color);
     text-decoration: none;
+
+      &>span {
+          color: var(--title-color);
+        }
   }
   
-  .logo > span {
-    color: var(--title-color);
-  }

@@ -1,10 +1,12 @@
 .section {
   padding-bottom: 180px;
+
+  &__contact-us {
+      padding-bottom: 55px;
+    }
+  
+    &__footer {
+      padding: 22px 0 77px;
+    }
 }
 
-.section__contact-us {
-  padding-bottom: 55px;
-}
-.section__footer {
-  padding: 22px 0 77px;
-}

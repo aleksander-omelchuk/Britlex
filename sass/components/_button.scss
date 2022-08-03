@@ -13,27 +13,31 @@
   
     color: var(--main-background-color);
     background-color: var(--button-background-color);
-  }
-  .button__header {
-    margin-left: auto;
-    color: var(--title-color);
-    background-color: var(--main-background-color);
-    border: 2px solid var(--button-background-color);
-  }
-  .button__hero {
-    width: 426px;
-    height: 100px;
-    font-size: 36px;
-    line-height: 1.5;
-  }
-  .button__skills {
-    width: 230px;
-    height: 60px;
-    font-weight: 500;
-    font-size: 18px;
-    margin-top: 30px; 
-  }
-  .button__contact-us {
-    margin-left: 30px;
-    font-weight: 500;
+
+      &__header {
+          margin-left: auto;
+          color: var(--title-color);
+          background-color: var(--main-background-color);
+          border: 2px solid var(--button-background-color);
+        }
+      
+        &__hero {
+          width: 426px;
+          height: 100px;
+          font-size: 36px;
+          line-height: 1.5;
+        }
+      
+        &__skills {
+          width: 230px;
+          height: 60px;
+          font-weight: 500;
+          font-size: 18px;
+          margin-top: 30px;
+        }
+      
+        &__contact-us {
+          margin-left: 30px;
+          font-weight: 500;
+        }
   }

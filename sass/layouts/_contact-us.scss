@@ -1,8 +1,8 @@
 .contact-us {
     margin-left: 144px;
-}
 
-.contact-us__text {
-    max-width: 654px;
-    margin-bottom: 30px;
+    &__text {
+            max-width: 654px;
+            margin-bottom: 30px;
+        }
 }

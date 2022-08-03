@@ -1,15 +1,16 @@
 .footer {
     border-top: 1px solid #c4c4c4;
+
+    &__list {
+            display: flex;
+            gap: 80px;
+        }
+    
+        &__link {
+            font-size: 24px;
+            letter-spacing: 0.02em;
+            color: var(--main-text-color);
+            text-decoration: none;
+        }
 }
 
-.footer__list {
-    display: flex;
-    gap: 80px;
-}
-
-.footer__link {
-    font-size: 24px;
-    letter-spacing: 0.02em;
-    color: var(--main-text-color);
-    text-decoration: none;
-}

@@ -1,20 +1,22 @@
 .hero {
     display: flex;
-  }
-  .hero__block {
-    max-width: 540px;
-    margin-right: auto;
-    position: relative;
-  }
-  .hero__icon {
-    position: absolute;
-    top: 90px;
-    left: 420px;
-    fill: var(--title-color);
-  }
-  
-  
-  .hero__text {
-    font-size: 24px;
-    margin-bottom: 60px;
+
+      &__block {
+          max-width: 540px;
+          margin-right: auto;
+          position: relative;
+        }
+      
+        &__icon {
+          position: absolute;
+          top: 90px;
+          left: 420px;
+          fill: var(--title-color);
+        }
+      
+      
+        &__text {
+          font-size: 24px;
+          margin-bottom: 60px;
+        }
   }

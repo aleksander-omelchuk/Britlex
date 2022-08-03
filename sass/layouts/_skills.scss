@@ -1,46 +1,57 @@
-.skills__list {
+.skills {
+&__list {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
-  .skills__item:first-child {
+
+  &__item:first-child {
     grid-row-start: 1;
     grid-row-end: 3;
   }
-  .skills__item:last-child {
+
+  &__item:last-child {
     display: flex;
     flex-direction: row-reverse;
     grid-column-start: 2;
     grid-column-end: 4;
   }
-  .skills__title {
+
+  &__title {
     font-size: 30px;
     margin-bottom: 20px;
     color: var(--button-background-color);
   }
-  .skills__text {
+
+  &__text {
     font-size: 16px;
     margin-bottom: 24px;
   }
-  
-  .skills__item {
+
+  &__item {
     padding: 32px 18px;
     background-color: var(--second-background-color);
     border-radius: 10px;
   }
-  .skills__item--wrapper {
+
+  &__item--wrapper {
     margin-right: auto;
   }
-  .skills__item:nth-of-type(1) .skills__item--wrapper {
+
+  &__item:nth-of-type(1) &__item--wrapper {
     width: 347px;
   }
-  .skills__item:nth-of-type(2) .skills__item--wrapper {
+
+  &__item:nth-of-type(2) &__item--wrapper {
     width: 340px;
   }
-  .skills__item:nth-of-type(3) .skills__item--wrapper {
+
+  &__item:nth-of-type(3) &__item--wrapper {
     width: 359px;
   }
-  .skills__item:nth-of-type(4) .skills__item--wrapper {
+
+  &__item:nth-of-type(4) &__item--wrapper {
     width: 324px;
   }
+}
