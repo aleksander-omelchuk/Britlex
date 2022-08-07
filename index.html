@@ -19,13 +19,13 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!-- header -->
-    <header>
-      <div class="container header">
+    <header class="header">
+      <div class="container container__header">
         <a class="logo" href="" aria-label="britlex"><span>Brit</span>lex</a>
         <nav class="nav">
           <ul class="nav__list">
@@ -41,7 +41,7 @@
     </header>
     <main>
       <!-- section Hero -->
-      <section class="section">
+      <section class="section section__hero">
         <div class="container hero">
           <div class="hero__block">
             <h1 class="title">Learn Any Foreign Language</h1>
@@ -49,18 +49,25 @@
               With our teachers who write a program for each student, you will
               be able to make your first sketch after the first lesson.
             </p>
-            <button class="button button__hero" type="button">Get started</button>
+            <button class="button button__hero" type="button">
+              Get started
+            </button>
             <svg class="hero__icon" width="120" height="120">
               <use href="./images/icons.svg#icon-bulb"></use>
             </svg>
           </div>
           <div>
-            <img
-              src="./images/hero/hero-lg.jpg"
-              alt="teachers"
-              width="654"
-              height="510"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/hero/hero-xl.jpg    1x,
+                  ./images/hero/hero-xl@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 1378px)"
+              />
+              <img src="./images/hero/hero-xs.jpg" alt="teacher" />
+            </picture>
           </div>
         </div>
       </section>
@@ -70,12 +77,18 @@
           <h2 class="subtitle">Skills</h2>
           <ul class="skills__list">
             <li class="skills__item">
-              <img
-                src="./images/skills/skills-01_lg.png"
-                alt="Speaking"
-                width="390"
-                height="390"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/skills/skills-01_xl.png    1x,
+                    ./images/skills/skills-01_xl@2x.png 2x
+                  "
+                  type="image/png"
+                  media="(min-width: 1378px)"
+                />
+                <img src="./images/skills/skills-01_xs.png" alt="Speaking" />
+              </picture>
+
               <div class="skills__item--wrapper">
                 <h3 class="skills__title">Speaking</h3>
                 <p class="skills__text">
@@ -89,16 +102,24 @@
                   high-quality courses and resources – all designed for adult
                   language learners.
                 </p>
-                <button class="button button__skills" type="button">Learn more</button>
+                <button class="button button__skills" type="button">
+                  Learn more
+                </button>
               </div>
             </li>
             <li class="skills__item">
-              <img
-                src="./images/skills/skills-02_lg.png"
-                alt="Writing"
-                width="390"
-                height="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/skills/skills-02_xl.png    1x,
+                    ./images/skills/skills-02_xl@2x.png 2x
+                  "
+                  type="image/png"
+                  media="(min-width: 1378px)"
+                />
+                <img src="./images/skills/skills-02_xs.png" alt="Writing" />
+              </picture>
+
               <div class="skills__item--wrapper">
                 <h3 class="skills__title">Writing</h3>
                 <p class="skills__text">
@@ -106,41 +127,57 @@
                   science, the science that studies substances, also their
                   composition
                 </p>
-                <button class="button button__skills" type="button">Learn more</button>
+                <button class="button button__skills" type="button">
+                  Learn more
+                </button>
               </div>
             </li>
             <li class="skills__item">
-              <img
-                class="img-reading"
-                src="./images/skills/skills-03_lg.png"
-                alt="Reading"
-                width="390"
-                height="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/skills/skills-03_xl.png    1x,
+                    ./images/skills/skills-03_xl@2x.png 2x
+                  "
+                  type="image/png"
+                  media="(min-width: 1378px)"
+                />
+                <img src="./images/skills/skills-03_xs.png" alt="reading" />
+              </picture>
+
               <div class="skills__item--wrapper">
                 <h3 class="skills__title">Reading</h3>
                 <p class="skills__text">
                   Perception and response actions of the user resulting from the
                   use and/or upcoming use of the product, system or service
                 </p>
-                <button class="button button__skills" type="button">Learn more</button>
+                <button class="button button__skills" type="button">
+                  Learn more
+                </button>
               </div>
             </li>
             <li class="skills__item">
-              <img
-                class="img-listening"
-                src="./images/skills/skills-04_lg.png"
-                alt="Listening"
-                width="408"
-                height="274"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/skills/skills-04_xl.png    1x,
+                    ./images/skills/skills-04_xl@2x.png 2x
+                  "
+                  type="image/png"
+                  media="(min-width: 1378px)"
+                />
+                <img src="./images/skills/skills-04_xs.png" alt="listening" />
+              </picture>
+
               <div class="skills__item--wrapper">
                 <h3 class="skills__title">Listening</h3>
                 <p class="skills__text">
                   Here you can find activities to practise your listening
                   skills. Listening will help you to improve your understanding
                 </p>
-                <button class="button button__skills" type="button">Learn more</button>
+                <button class="button button__skills" type="button">
+                  Learn more
+                </button>
               </div>
             </li>
           </ul>
@@ -148,8 +185,8 @@
       </section>
       <!-- Section About Us -->
       <section class="section">
-        <div class="container container__about">
-          <div class="about">
+        <div class="container about">
+          <div class="about__block">
             <h2 class="subtitle">About Us</h2>
             <p class="about__text">
               The model offers a framework for discussing problems related to
@@ -160,7 +197,7 @@
               users and the customer.
             </p>
             <ul class="about__list">
-              <li >
+              <li>
                 <p class="about__number">800</p>
                 <p>Pupils</p>
               </li>
@@ -174,12 +211,22 @@
               </li>
             </ul>
           </div>
-          <img
-            src="./images/about/about-lg.jpg"
-            alt="businesscompetition"
-            width="540"
-            height="540"
-          />
+          <div>
+            <picture>
+              <source
+                srcset="
+                  ./images/about/about-xl.jpg    1x,
+                  ./images/about/about-xl@2x.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 1378px)"
+              />
+              <img
+                src="./images/about/about-xs.jpg"
+                alt="Business competition"
+              />
+            </picture>
+          </div>
         </div>
       </section>
       <!-- section Pricing -->
@@ -188,53 +235,67 @@
           <h2 class="subtitle">Pricing</h2>
           <ul class="pricing__list">
             <li class="pricing__item">
-              <img
-                src="./images/pricing/pricing-01_lg.jpg"
-                alt="online"
-                width="426"
-                height="320"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/pricing/pricing-01_xl.jpg    1x,
+                    ./images/pricing/pricing-01_xl@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1378px)"
+                />
+                <img src="./images/pricing/pricing-01_xs.jpg" alt="online" />
+              </picture>
               <h3 class="pricing__title">Self-study online course</h3>
               <div class="pricing--wrapper">
                 <p class="pricing__text">
                   Start learning English online in live classes with qualified
                   EC teachers and students from all over the world.
                 </p>
-                <p class="pricing__price">
-                  £5.99<span> per month</span>
-                </p>
+                <p class="pricing__price">£5.99<span> per month</span></p>
               </div>
             </li>
             <li class="pricing__item">
-              <img
-                src="./images/pricing/pricing-02_lg.jpg"
-                alt="lesson"
-                width="426"
-                height="320"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/pricing/pricing-02_xl.jpg    2x,
+                    ./images/pricing/pricing-02_xl@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1378px)"
+                />
+                <img
+                  src="./images/pricing/pricing-02_xs.jpg"
+                  alt="lesson"
+                  width="426"
+                  height="320"
+                />
+              </picture>
               <h3 class="pricing__title">Live online classes</h3>
               <p class="pricing__text">
                 Interactive group classes with expert teachers. Free 7-day trial
               </p>
-              <p class="pricing__price">
-                £12.99<span> per month</span>
-              </p>
+              <p class="pricing__price">£12.99<span> per month</span></p>
             </li>
             <li class="pricing__item">
-              <img
-                src="./images/pricing/pricing-03_lg.jpg"
-                alt="webinar"
-                width="426"
-                height="320"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/pricing/pricing-03_xl.jpg    1x,
+                    ./images/pricing/pricing-03_xl@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                  media="(min-width: 1378px)"
+                />
+                <img src="./images/pricing/pricing-03_xs.jpg" alt="webinar" />
+              </picture>
               <h3 class="pricing__title">Personal Tuition</h3>
               <p class="pricing__text">
                 Online one-to-one English tutoring – enjoy our first session for
                 only $1
               </p>
-              <p class="pricing__price">
-                £12.99<span> per month</span>
-              </p>
+              <p class="pricing__price">£12.99<span> per month</span></p>
             </li>
           </ul>
         </div>
@@ -243,12 +304,20 @@
     <!-- section Contact Us -->
     <section class="section section__contact-us">
       <div class="container container__contact-us">
-        <img
-          src="./images/contact/contact-lg.jpg"
-          alt="boy"
-          width="425"
-          height="430"
-        />
+        <div>
+          <picture>
+            <source
+              srcset="
+                ./images/contact/contact-xl.jpg    2x,
+                ./images/contact/contact-xl@2x.jpg 2x
+              "
+              type="image/jpg"
+              media="(min-width: 1378px)"
+            />
+            <img src="./images/contact/contact-xs.jpg" alt="boy" />
+          </picture>
+        </div>
+
         <div class="contact-us">
           <h2 class="subtitle subtitle--left">Contact Us</h2>
           <p class="contact-us__text">
@@ -266,7 +335,9 @@
                 required
               />
             </label>
-            <button class="button button__contact-us" type="button">Subscribe</button>
+            <button class="button button__contact-us" type="button">
+              Subscribe
+            </button>
           </form>
         </div>
       </div>

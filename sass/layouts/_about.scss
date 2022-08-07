@@ -1,10 +1,14 @@
 .about {
+  display: flex;
+  &__block {
+        max-width: 652px;
+          margin-right: auto;
+  }
 
   &__text {
       display: flex;
       flex-wrap: wrap;
       line-height: 1.8;
-      margin-right: 146px;
       margin-bottom: 30px;
     }
   
